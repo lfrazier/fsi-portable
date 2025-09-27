@@ -1,8 +1,8 @@
-# About this site
+# About this site 🇧🇷
 
 These files were legally obtained from the US Department of State's <strong>NATIONAL FOREIGN AFFAIRS TRAINING CENTER</strong>. I am not affiliated with the US Government in any way, and this is not an attempt to impersonate a government program.
 <br>
-I just wanted an efficient way to learn Portuguese on the go :)
+I just wanted an efficient way to learn Portuguese 🇧🇷 on the go :)
 
 ## Build Information
 

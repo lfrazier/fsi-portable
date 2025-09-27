@@ -1,4 +1,4 @@
-site_name: FSI Portable
+site_name: FSI Portable 🇧🇷
 site_url: https://example.local
 theme:
   name: material
@@ -16,15 +16,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: green
+      accent: blue
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: green
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -48,7 +48,7 @@ plugins:
   #       theme_color: "#222222"
 nav:
   - Home: index.md
-  - Lessons:
+  - "Lessons":
       - "Volume 1":
         - "Unit 01": lessons/volume1_unit01.md
         - "Unit 02": lessons/volume1_unit02.md
@@ -75,7 +75,7 @@ nav:
         - "Unit 23": lessons/volume1_unit23.md
         - "Unit 24": lessons/volume1_unit24.md
         - "Unit 25": lessons/volume1_unit25.md
-      - "Volume 2":
+      - "Volume 2 🇧🇷":
         - "Unit 26": lessons/volume2_unit26.md
         - "Unit 27": lessons/volume2_unit27.md
         - "Unit 28": lessons/volume2_unit28.md
@@ -99,14 +99,14 @@ nav:
         - "Unit 46": lessons/volume2_unit46.md
         - "Unit 47": lessons/volume2_unit47.md
         - "Unit 48": lessons/volume2_unit48.md
-  - Extras:
+  - "Extras":
       - "Volume 1 - Introduction": extras/volume1-introduction.md
       - "Volume 1 - Vocabulary": extras/volume1-vocabulary.md
       - "Volume 1 - Instructors Manual": extras/volume1-instructors-manual.md
       - "Volume 1 - Complete Course": extras/volume1-course.md
       - "Volume 2 - Introduction": extras/volume2-introduction.md
       - "Volume 2 - Complete Course": extras/volume2-course.md
-  - About: about.md
+  - "About": about.md
 
 extra_javascript:
   - assets/js/audio-player.js

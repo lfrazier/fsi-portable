@@ -5,11 +5,11 @@
   bottom: 12px;
   z-index: 9999;
   max-width: min(520px, 92vw);
-  background: #1a1a1a;
+  background: linear-gradient(135deg, #2e7d32, #388e3c);
   color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  border: 1px solid #333;
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.4);
+  border: 1px solid #4caf50;
   padding: 16px;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   transition: all 0.3s ease;
@@ -25,14 +25,14 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background: #1a1a1a;
-  border: 2px solid #ffffff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(135deg, #2e7d32, #388e3c);
+  border: 2px solid #ffeb3b;
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.6);
 }
 
 .fsi-audio-wrap.fsi-minimized:hover{
   transform: scale(1.05);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6px 25px rgba(46, 125, 50, 0.8);
 }
 
 /* Minimized play button styling */
@@ -40,9 +40,9 @@
   width: 60px;
   height: 60px;
   font-size: 12px;
-  background: #ffffff;
+  background: #ffeb3b;
   color: #1a1a1a;
-  border: 2px solid #ffffff;
+  border: 2px solid #ffeb3b;
   font-weight: bold;
   line-height: 1;
   display: flex;
@@ -70,7 +70,7 @@
 }
 
 .fsi-audio-wrap.fsi-minimized .fsi-btn:hover{
-  background: #f0f0f0;
+  background: #fff176;
   transform: scale(1.1);
 }
 
@@ -103,12 +103,14 @@
   height: 30px;
   font-size: 18px;
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 235, 59, 0.2);
+  border: 1px solid rgba(255, 235, 59, 0.5);
+  color: #ffeb3b;
 }
 
 .fsi-btn.fsi-minimize:hover{
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 235, 59, 0.3);
+  border-color: #ffeb3b;
 }
 
 .fsi-audio-row-middle{
@@ -124,8 +126,8 @@
 
 .fsi-btn{
   background: transparent;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid #ffeb3b;
+  color: #ffeb3b;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -137,34 +139,35 @@
 }
 
 .fsi-btn:hover{ 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 235, 59, 0.2);
+  border-color: #fff176;
 }
 
 .fsi-btn:active{
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 235, 59, 0.3);
   transform: scale(0.95);
 }
 
 .fsi-btn:disabled{
   opacity: 0.5;
   cursor: not-allowed;
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-color: rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 235, 59, 0.1) !important;
+  border-color: rgba(255, 235, 59, 0.3) !important;
 }
 
 .fsi-btn:disabled:hover{
-  background: rgba(255, 255, 255, 0.05) !important;
+  background: rgba(255, 235, 59, 0.1) !important;
   transform: none !important;
 }
 
 .fsi-btn:disabled:active{
-  background: rgba(255, 255, 255, 0.05) !important;
+  background: rgba(255, 235, 59, 0.1) !important;
   transform: none !important;
 }
 
 /* Play button styling */
 .fsi-btn.fsi-play{
-  background: #ffffff;
+  background: #ffeb3b;
   color: #1a1a1a;
   width: 60px;
   height: 60px;
@@ -173,7 +176,7 @@
 }
 
 .fsi-btn.fsi-play:hover{
-  background: #f0f0f0;
+  background: #fff176;
 }
 
 /* Navigation buttons */
@@ -182,6 +185,8 @@
   width: 40px;
   height: 40px;
   font-size: 16px;
+  border-color: #ffeb3b;
+  color: #ffeb3b;
 }
 
 /* Skip buttons */
@@ -191,6 +196,8 @@
   height: 40px;
   font-size: 12px;
   position: relative;
+  border-color: #ffeb3b;
+  color: #ffeb3b;
 }
 
 .fsi-btn.fsi-skip-back::after,
@@ -211,6 +218,7 @@
   cursor: pointer;
   touch-action: manipulation;
   margin: 8px 0;
+  accent-color: #ffeb3b;
 }
 
 .fsi-range:disabled{
@@ -345,8 +353,8 @@
 
 .fsi-speed{
   background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #ffeb3b;
+  border: 1px solid #ffeb3b;
   border-radius: 6px;
   padding: 4px 8px;
   cursor: pointer;
@@ -359,12 +367,12 @@
 }
 
 .fsi-speed:focus{
-  outline: 2px solid #ff6b35;
+  outline: 2px solid #ffeb3b;
   outline-offset: 2px;
 }
 
 .fsi-speed:hover{
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 235, 59, 0.1);
 }
 
 .fsi-chapters{
