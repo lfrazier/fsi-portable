@@ -72,7 +72,6 @@ tags: [volume1]
 }
 </script>
 
-## Lesson PDF (embedded)
 <div class="pdf-shell">
   <iframe
     id="lesson-pdf"

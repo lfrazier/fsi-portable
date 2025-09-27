@@ -15,6 +15,69 @@
   transition: all 0.3s ease;
 }
 
+.fsi-audio-wrap.fsi-minimized{
+  max-width: 100px;
+  min-width: 100px;
+  height: 100px;
+  padding: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #1a1a1a;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.fsi-audio-wrap.fsi-minimized:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Minimized play button styling */
+.fsi-audio-wrap.fsi-minimized .fsi-btn{
+  width: 60px;
+  height: 60px;
+  font-size: 12px;
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 2px solid #ffffff;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px;
+}
+
+/* Hide the original icon content when minimized */
+.fsi-audio-wrap.fsi-minimized .fsi-btn {
+  font-size: 0; /* Hide the original icon */
+}
+
+/* Override the icon with text for minimized state */
+.fsi-audio-wrap.fsi-minimized .fsi-btn::before {
+  content: "PLAY";
+  font-size: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.fsi-audio-wrap.fsi-minimized .fsi-btn[aria-label="Pause"]::before {
+  content: "PAUSE";
+}
+
+.fsi-audio-wrap.fsi-minimized .fsi-btn:hover{
+  background: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.fsi-audio-wrap.fsi-minimized .fsi-btn:active{
+  transform: scale(0.95);
+}
+
 .fsi-audio-bar{
   display: flex;
   flex-direction: column;
@@ -32,6 +95,20 @@
 .fsi-audio-row-top{
   justify-content: space-between;
   margin-bottom: 8px;
+}
+
+/* Minimize button styling */
+.fsi-btn.fsi-minimize{
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.fsi-btn.fsi-minimize:hover{
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .fsi-audio-row-middle{
@@ -66,6 +143,23 @@
 .fsi-btn:active{
   background: rgba(255, 255, 255, 0.2);
   transform: scale(0.95);
+}
+
+.fsi-btn:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.fsi-btn:disabled:hover{
+  background: rgba(255, 255, 255, 0.05) !important;
+  transform: none !important;
+}
+
+.fsi-btn:disabled:active{
+  background: rgba(255, 255, 255, 0.05) !important;
+  transform: none !important;
 }
 
 /* Play button styling */
@@ -119,11 +213,21 @@
   margin: 8px 0;
 }
 
+.fsi-range:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #222;
+}
+
 /* Progress bar track styling */
 .fsi-range::-webkit-slider-track {
   background: #333;
   height: 6px;
   border-radius: 3px;
+}
+
+.fsi-range:disabled::-webkit-slider-track {
+  background: #222;
 }
 
 .fsi-range::-moz-range-track {
@@ -155,6 +259,23 @@
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.6);
 }
 
+.fsi-range:disabled::-webkit-slider-thumb {
+  background: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+  border-color: #999;
+}
+
+.fsi-range:disabled::-webkit-slider-thumb:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.fsi-range:disabled::-webkit-slider-thumb:active {
+  transform: none;
+  box-shadow: none;
+}
+
 .fsi-range::-moz-range-thumb {
   width: 16px;
   height: 16px;
@@ -163,6 +284,13 @@
   cursor: pointer;
   border: 2px solid #ffffff;
   box-shadow: 0 2px 6px rgba(255, 107, 53, 0.4);
+}
+
+.fsi-range:disabled::-moz-range-thumb {
+  background: #666;
+  cursor: not-allowed;
+  border-color: #999;
+  box-shadow: none;
 }
 
 /* Progress bar filled portion */

@@ -1,9 +1,8 @@
-# About this build
+# About this site
 
-- **Stack:** MkDocs + Material theme (static files, easy to host or run locally)
-- **Offline:** Works great as a PWA (optional plugin) or as files in Obsidian mobile
-- **Audio:** Put your MP3s in `docs/assets/audio/` and reference them from lessons
-- **Private:** Personal use only; not intended for distribution
+These files were legally obtained from the US Department of State's <strong>NATIONAL FOREIGN AFFAIRS TRAINING CENTER</strong>. I am not affiliated with the US Government in any way, and this is not an attempt to impersonate a government program.
+<br>
+I just wanted an efficient way to learn Portuguese on the go :)
 
 ## Build Information
 
