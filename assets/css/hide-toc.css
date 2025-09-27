@@ -1,0 +1,16 @@
+/* Hide the table of contents */
+.md-sidebar--secondary {
+    display: none !important;
+}
+
+/* Adjust main content to use full width when TOC is hidden */
+.md-content {
+    margin-right: 0 !important;
+}
+
+/* Hide TOC on mobile as well */
+@media screen and (max-width: 76.1875em) {
+    .md-sidebar--secondary {
+        display: none !important;
+    }
+}
