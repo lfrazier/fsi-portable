@@ -1,0 +1,10 @@
+.pdf-shell { margin: 8px 0 16px; }
+.pdf-frame {
+  width: 100%;
+  height: calc(100vh - 160px); /* tune for your header/footer */
+  border: 1px solid var(--md-sys-color-outline,#DDD);
+  border-radius: 12px;
+}
+@media (max-width: 480px){
+  .pdf-frame { height: 70vh; }
+}

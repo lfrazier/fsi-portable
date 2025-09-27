@@ -1,0 +1,19 @@
+---
+title: Volume 1 - Instructors Manual
+tags: [extras, volume1, manual]
+---
+
+# Volume 1 - Instructors Manual
+
+This is the instructor's manual for Volume 1 of the FSI Portuguese Programmatic course.
+
+## PDF Document (embedded)
+<div class="pdf-shell">
+  <iframe
+    id="lesson-pdf"
+    class="pdf-frame"
+    src="../../assets/pdfjs/web/viewer.html?file=../../../extras/FSI - Portuguese Programmatic - Volume 1 - Instructors Manual.pdf#page=1&zoom=page-width"
+    loading="lazy"
+    title="Volume 1 - Instructors Manual PDF"
+  ></iframe>
+</div>
