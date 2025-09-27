@@ -117,3 +117,4 @@ extra_css:
   - assets/css/audio-player.css
   - assets/css/pdf-viewer.css
   - assets/css/hide-toc.css
+  - assets/css/git-info.css
